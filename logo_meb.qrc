@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="logo_meb">
+    <file>meb_logo.png</file>
+  </qresource>
+</RCC>

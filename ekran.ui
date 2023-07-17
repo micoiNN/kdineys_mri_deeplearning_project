@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(42, 44, 111, 255), stop:0.521368 rgba(28, 29, 73, 255));border-radius: 30px;</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>59</y>
+     <width>1050</width>
+     <height>960</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_kapa">
+   <property name="geometry">
+    <rect>
+     <x>994</x>
+     <y>20</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>17</width>
+     <height>17</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Close</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {		
+	background-color: rgba(255, 0, 0, 150);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none;
+image: url(:/logom/tubitak_logo.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>960</width>
+     <height>570</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(60, 231, 195,150);
+border-radius: 12px;
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(60, 231, 195,150);
+</string>
+    </property>
+    <widget class="QLabel" name="tumor_i_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>440</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Tümör bulunma ihtimali:</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="Roket_Map" native="true">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>591</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="bt_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>590</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+image:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="isle_onay">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>500</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>İşle</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_sec">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>500</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	color:rgb(250,250,250);
+
+	background-color: rgb(0, 85, 127);
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover {	
+	background-color: rgba(0, 85, 127, 150);
+}</string>
+     </property>
+     <property name="text">
+      <string>BT Seç</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="kist_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>470</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Kist bulunma ihtimali:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tas_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>500</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Taş bulunma ihtimali:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="normal_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>530</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Sağlıklı olma ihtimali:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nii_katman">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+	
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>.nii dosya katmanlara ayir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ni_kaydet">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>kaydedilecek yeri seç</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ni_onayla">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>92</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>Onayla</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>301</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>480</y>
+       <width>271</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="t_ihtimal">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>440</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="kist_ihtimal">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>470</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tas_ihtimal">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>500</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="normal_ihtimal">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>530</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="d_yansi">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>520</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>Diğer yansı</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="bt_semantic">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>390</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>BT ile anlamsal bölütleme</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="t_tani">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>440</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="muhtemel_text">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>440</y>
+       <width>261</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Muhtemel Tanı:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:none;
+image: url(:/logo_meb/meb_logo.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>tumor_i_t</zorder>
+    <zorder>Roket_Map</zorder>
+    <zorder>kist_t</zorder>
+    <zorder>tas_t</zorder>
+    <zorder>normal_t</zorder>
+    <zorder>label</zorder>
+    <zorder>nii_katman</zorder>
+    <zorder>ni_kaydet</zorder>
+    <zorder>ni_onayla</zorder>
+    <zorder>label_2</zorder>
+    <zorder>bt_sec</zorder>
+    <zorder>isle_onay</zorder>
+    <zorder>t_ihtimal</zorder>
+    <zorder>kist_ihtimal</zorder>
+    <zorder>tas_ihtimal</zorder>
+    <zorder>normal_ihtimal</zorder>
+    <zorder>d_yansi</zorder>
+    <zorder>bt_semantic</zorder>
+    <zorder>t_tani</zorder>
+    <zorder>muhtemel_text</zorder>
+    <zorder>label_5</zorder>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QTextEdit" name="h_oyku">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>300</y>
+       <width>481</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="h_yas_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Yaşı</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="h_isim">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="h_cinsiyet_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Cinsiyeti</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="h_cinsiyet">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="h_yas">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="h_iletisim_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>İletişim Bilgisi (Email)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="h_isim_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Hasta İsim Soy İsim</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="h_email">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>140</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="h_tani_oyku">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>270</y>
+       <width>271</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Tanı ve Hastanın Öyküsü</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="u_dil">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>490</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Uygulama Dili</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="turkce">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>530</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>Türkçe</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="english">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>530</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>English</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="y_tahlil_t">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>361</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 100 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Yapılacak Tahliller ve İşlemler</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="y_islem">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>371</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="h_kaydet">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>530</y>
+       <width>171</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+	font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>İŞLE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="d_yansi_2">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>520</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>Diğer yansı</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hasta_bilgi_kaydet">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>130</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color:rgb(250,250,250);
+	border: none;
+	border-radius: 10px;		
+	background-color:  rgb(0, 85, 127);
+}
+QPushButton:hover {	
+	background-color: rgb(0, 85, 127, 100);
+}</string>
+     </property>
+     <property name="text">
+      <string>Tüm bilgileri Kaydet</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="id_no">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>20</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 11pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="h_cinsiyet_t_2">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>20</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>ID:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tc_hasta">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Hasta TCKN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="h_tc_yaz">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>180</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 5px;image:none;
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>80</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:none;
+image:url(:/logo_meb/meb_logo.png)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_indir">
+   <property name="geometry">
+    <rect>
+     <x>943</x>
+     <y>20</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>17</width>
+     <height>17</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Maximize</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;	
+	background-color: rgb(85, 255, 127);
+}
+QPushButton:hover {	
+	background-color: rgba(85, 255, 127, 150);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cerceve">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>20</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>17</width>
+     <height>17</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Minimize</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:hover {	
+	background-color: rgba(255, 170, 0, 150);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+  <include location="logo_meb.qrc"/>
+ </resources>
+ <connections/>
+</ui>
